@@ -18,7 +18,9 @@ public abstract class Employee {
 
     //setter method for name
     public void changeName(String newName) {
-        this.name = newName;
+        if (newName != null) {
+            this.name = newName;
+        }
     }
 
     public String getNationalInsuranceNumber(){

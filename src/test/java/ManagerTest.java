@@ -51,6 +51,12 @@ public class ManagerTest {
         manager.changeName("Betty");
         assertEquals("Betty", manager.getName());
     }
+
+    @Test
+    public void doesNotAllowUserToChangeNameToNull() {
+        manager.changeName(null);
+        assertEquals("Polka Dot", manager.getName());
+    }
 }
 
 

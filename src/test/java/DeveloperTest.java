@@ -45,4 +45,10 @@ public class DeveloperTest {
         developer.changeName("Betty");
         assertEquals("Betty", developer.getName());
     }
+
+    @Test
+    public void doesNotAllowUserToChangeNameToNull() {
+        developer.changeName(null);
+        assertEquals("Karamba Cylon", developer.getName());
+    }
 }

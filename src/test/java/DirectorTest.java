@@ -54,6 +54,12 @@ public class DirectorTest {
         director.changeName("Betty");
         assertEquals("Betty", director.getName());
     }
+
+    @Test
+    public void doesNotAllowUserToChangeNameToNull() {
+        director.changeName(null);
+        assertEquals("Axminster Hubploy", director.getName());
+    }
 }
 
 

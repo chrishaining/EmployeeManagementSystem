@@ -45,4 +45,10 @@ public class DatabaseAdminTest {
         databaseAdmin.changeName("Betty");
         assertEquals("Betty", databaseAdmin.getName());
     }
+
+    @Test
+    public void doesNotAllowUserToChangeNameToNull() {
+        databaseAdmin.changeName(null);
+        assertEquals("Sentient Laertes", databaseAdmin.getName());
+    }
 }
