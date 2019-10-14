@@ -19,6 +19,20 @@ public class ManagerTest {
         assertEquals("Polka Dot", manager.getName());
     }
 
+    @Test
+    public void hasNationalInsuranceNumber() {
+        assertEquals("JE812681B", manager.getNationaInsuranceNumber());
+    }
+
+    @Test
+    public void hasSalary() {
+        assertEquals(35000, manager.getSalary(), 0.01);
+    }
+
+    @Test
+    public void hasDeptName() {
+        assertEquals("Homeland Security", manager.getDeptName());
+    }
 }
 
 
