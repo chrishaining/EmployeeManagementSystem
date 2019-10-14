@@ -3,12 +3,12 @@ package staff;
 public abstract class Employee {
 
     private String name;
-    private String nationaInsuranceNumber;
+    private String nationalInsuranceNumber;
     private double salary;
 
-    public Employee(String name, String nationaInsuranceNumber, int salary) {
+    public Employee(String name, String nationalInsuranceNumber, double salary) {
         this.name = name;
-        this.nationaInsuranceNumber = nationaInsuranceNumber;
+        this.nationalInsuranceNumber = nationalInsuranceNumber;
         this.salary = salary;
     }
 
@@ -16,15 +16,15 @@ public abstract class Employee {
         return this.name;
     }
 
-    public String getNationaInsuranceNumber(){
-        return this.nationaInsuranceNumber;
+    public String getNationalInsuranceNumber(){
+        return this.nationalInsuranceNumber;
     }
 
     public double getSalary() {
         return this.salary;
     }
 
-    public void raiseSalary(Double raiseAmount) {
+    public void raiseSalary(double raiseAmount) {
         this.salary = this.salary + raiseAmount;
     }
 
@@ -33,4 +33,3 @@ public abstract class Employee {
     }
 
 }
-
