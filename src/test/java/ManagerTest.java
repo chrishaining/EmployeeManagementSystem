@@ -45,6 +45,12 @@ public class ManagerTest {
         manager.payBonus();
         assertEquals(350, manager.payBonus(), 0.01);
     }
+
+    @Test
+    public void canChangeName() {
+        manager.changeName("Betty");
+        assertEquals("Betty", manager.getName());
+    }
 }
 
 

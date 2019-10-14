@@ -39,4 +39,10 @@ public class DatabaseAdminTest {
         databaseAdmin.payBonus();
         assertEquals(50, databaseAdmin.payBonus(), 0.01);
     }
+
+    @Test
+    public void canChangeName() {
+        databaseAdmin.changeName("Betty");
+        assertEquals("Betty", databaseAdmin.getName());
+    }
 }

@@ -39,4 +39,10 @@ public class DeveloperTest {
         developer.payBonus();
         assertEquals(500, developer.payBonus(), 0.01);
     }
+
+    @Test
+    public void canChangeName() {
+        developer.changeName("Betty");
+        assertEquals("Betty", developer.getName());
+    }
 }

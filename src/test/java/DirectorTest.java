@@ -34,8 +34,8 @@ public class DirectorTest {
 
     @Test
     public void canRaiseSalary() {
-        director.raiseSalary(0.75);
-        assertEquals(100.75, director.getSalary(), 0.01);
+        director.raiseSalary(-50);
+        assertEquals(100, director.getSalary(), 0.01);
     }
 
     @Test
@@ -47,6 +47,12 @@ public class DirectorTest {
     @Test
     public void hasBudget() {
         assertEquals(130000, director.getBudget(), 0.01);
+    }
+
+    @Test
+    public void canChangeName() {
+        director.changeName("Betty");
+        assertEquals("Betty", director.getName());
     }
 }
 
