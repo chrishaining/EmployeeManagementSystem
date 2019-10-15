@@ -43,7 +43,7 @@ public class Runner {
                 double budget = parseDouble(budgetInput);
 
                 Director director = new Director(employeeName, niNumber, salary, department, budget);
-                System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s. They work in the %s department. They have a budget of £%s.", director.getName(), director.getNationalInsuranceNumber(), director.getSalary(), director.getDeptName(), director.getBudget()));
+                System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s. They work in the %s department. They have a budget of £%s. They got a bonus of %s", director.getName(), director.getNationalInsuranceNumber(), director.getSalary(), director.getDeptName(), director.getBudget(), director.payBonus()));
             }
 
             //set up to add a manager
@@ -53,21 +53,21 @@ public class Runner {
                 String department = scanner.next();
 
                 Manager manager = new Manager(employeeName, niNumber, salary, department);
-                System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s. They work in the %s department.", manager.getName(), manager.getNationalInsuranceNumber(), manager.getSalary(), manager.getDeptName()));
+                System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s. They work in the %s department. They got a bonus of %s", manager.getName(), manager.getNationalInsuranceNumber(), manager.getSalary(), manager.getDeptName(), manager.payBonus()));
             }
 
             //to add a developer
             else if (employeeType.equals("Developer")) {
 
                 Developer developer = new Developer(employeeName, niNumber, salary);
-                System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s.", developer.getName(), developer.getNationalInsuranceNumber(), developer.getSalary()));
+                System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s. They got a bonus of %s", developer.getName(), developer.getNationalInsuranceNumber(), developer.getSalary(), developer.payBonus()));
             }
 
             //to add a databaseAdmin
             else if (employeeType.equals("DatabaseAdmin")) {
 
                 DatabaseAdmin databaseAdmin = new DatabaseAdmin(employeeName, niNumber, salary);
-                System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s.", databaseAdmin.getName(), databaseAdmin.getNationalInsuranceNumber(), databaseAdmin.getSalary()));
+                System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s. They got a bonus of %s", databaseAdmin.getName(), databaseAdmin.getNationalInsuranceNumber(), databaseAdmin.getSalary(), databaseAdmin.payBonus()));
             }
 
         }
