@@ -35,7 +35,7 @@ public class Runner {
 
 
             switch(employeeType) {
-                case employeeType.equals("Director"):
+                case "Director":
 
                     System.out.println("What is the employee's department?");
                     String department = scanner.next();
@@ -49,7 +49,7 @@ public class Runner {
 
                 break;
 
-                case employeeType.equals("Manager"):
+                case "Manager":
 
                     System.out.println("What is the employee's department?");
                     String department = scanner.next();
@@ -59,14 +59,14 @@ public class Runner {
 
                 break;
 
-                case employeeType.equals("Developer"):
+                case "Developer":
 
                     Developer developer = new Developer(employeeName, niNumber, salary);
                     System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s.", developer.getName(), developer.getNationalInsuranceNumber(), developer.getSalary()));
 
                 break;
 
-                case employeeType.equals("DatabaseAdmin"):
+                case "DatabaseAdmin":
 
                     DatabaseAdmin databaseAdmin = new DatabaseAdmin(employeeName, niNumber, salary);
                     System.out.println(String.format("Congratulations! You have added %s to the system. Their NI number is: %s. Their salary is £%s.", databaseAdmin.getName(), databaseAdmin.getNationalInsuranceNumber(), databaseAdmin.getSalary()));
