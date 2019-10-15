@@ -21,7 +21,7 @@ public class Runner {
         String employeeType = scanner.next();
 
         if (!employeeType.equals("Manager") && !employeeType.equals("Director") && !employeeType.equals("Developer") && !employeeType.equals("DatabaseAdmin")) {
-            System.out.println("You broke it!");
+            System.out.println("Sorry, I don't recognise that job. Please rerun the program.");
         }
 
         else {
@@ -72,9 +72,6 @@ public class Runner {
             }
 
         }
-//        else {
-//            System.out.println("That's incorrect. Please run the program to try again.");
-//        }
     }
 }
 
