@@ -3,7 +3,6 @@ package runner;
 import java.util.Scanner;
 
 import static java.lang.Double.parseDouble;
-import static java.lang.Integer.parseInt;
 
 import staff.management.Manager;
 import staff.management.Director;
